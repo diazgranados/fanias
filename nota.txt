@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/estilo_admin.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>Fania's</title>
+</head>
+<body id="fondo">
+    
+    <h1 id="color">Fania's</h1>
+
+    <div class="imgbox"><img id="imagen" src="/static/FaniaReserva.jpeg"></div>
+    <form action="/" enctype="multipart/form-data" method="post">
+        <h3>Contactanos</h3>
+        <h5>+56968301667</h5>
+        <a id="color1" class="btn btn-success" href="http://Wa.me//+56968301667">Contactar</a> 
+
+    </form>
+    <li><a class="btn btn-success"   class="salir" href="{{ url_for('cita') }}">Agendar cita</a></li>
+
+<style>
+    #color{
+        color: rgb(46, 29, 61);
+    }
+    
+    #fondo{
+
+        
+        
+        position: relative;
+        background: url(https://nortena577.files.wordpress.com/2012/03/color-rosa-intenso.jpg)
+        
+        
+        no-repeat center center fixed;
+
+        background-size: cover;
+
+        }
+    #imagen{
+        height: 250px;
+    }
+</style>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+    <link rel="icon" type="image/png" href="/static/hokage.png">
+
+
+
+
+
+
+
+
+
+
+     .fondoT{
+        position: relative;
+        background: url(https://media.glamour.mx/photos/6190894b2d97bd4c522aaa2c/3:4/w_1179,h_1572,c_limit/199539.jpg)
+        
+        
+        no-repeat center center fixed;
+
+        background-size: cover;
+        width: 100%;
+        height: 120vh;    
+        }

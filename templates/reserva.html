@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="/static/login.css">
+    <title>Reservacion</title>
+</head>
+<body>
+    
+    {% block contenido%}
+    <div class="otracosa">
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        {% for message in messages %}
+            <p>{{message}}</p>
+        {% endfor %}
+        {% endif %}
+        {% endwith %}
+    </div>
+    <section>
+        
+        <div  class="container">
+            <div class="user singinbx">
+                <div class="imgbox"><img src="/static/FaniaReserva.jpeg"></div>
+                <div  class="formbox">
+                    <form action="/loginSenju" method="POST">
+                        <h1>Contactanos</h1>
+                        <h3>Numero de telefono +56961711269</h3>
+                        <button class="boton"><a class="boton"  href="http://Wa.me//+56961711269">Contactar</a></button>                    
+
+    
+                    </form>
+                 <button class="boton"> <a class="boton"    class="salir" href="{{ url_for('cita') }}">Agendar cita</a></button>
+                    <p>
+                        <button class="boton"> <a class="boton"    class="salir" href="{{ url_for('inicio') }}">Regresar</a></button>  
+
+     
+                </div>
+            </div>     
+        </div>
+    </section>
+    {% endblock %}
+    <style>
+        .boton{
+            text-decoration: none;
+            background-color:slategray;
+            color: rgb(255, 255, 255);
+            border-radius: 10px;
+            padding: 6px 15px;
+            border: none;
+            margin-top: 8px;
+            height: 9%;
+
+        }
+
+        
+       
+    </style>
+</body>
+</html>

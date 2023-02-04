@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>Fania's</title>
+</head>
+<body id="fondo">
+    
+    <h1 id="color">Fania's</h1>
+
+    <div class="imgbox"><img src="https://cdn.colombia.com/sdi/2022/04/28/tendencias-manicure-8-estilos-unas-usar-mayo-a-septiembre-1022894-0.jpg"></div>
+    <form action="/" enctype="multipart/form-data" method="post">
+        <button class="boton"><a class="boton"  href="{{ url_for('reserva') }}">Explora</a></button>                    
+        <button class="boton"><a class="boton"  href="{{ url_for('login') }}">logeate</a></button>
+
+    </form>
+    
+
+
+
+<style>
+    #color{
+        color: rgb(46, 29, 61);
+    }
+    
+    #fondo{
+
+        
+        background: #333333;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #dd1818, #333333);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #dd1818, #333333); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+
+        .boton{
+            text-decoration: none;
+            background-color:rgb(177, 72, 72);
+            color: rgb(77, 32, 32);
+            border-radius: 10px;
+            padding: 6px 15px;
+            border: none;
+            margin-top: 8px;
+            height: 9%;
+
+        }
+
+        
+
+</style>
+
+</body>
+</html>

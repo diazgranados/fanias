@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cita</title>
+    <link rel="stylesheet" href="/static/actualizar_datos.css">
+    <link rel="icon" type="image/png" href="/static/logo1.png">
+</head>
+{% block contenido%}
+<div class="otracosa">
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    {% for message in messages %}
+        <p>{{message}}</p>
+    {% endfor %}
+    {% endif %}
+    {% endwith %}
+</div>
+<body>
+
+    <div class="color">
+        <h2 class="h1">Ingresa tus datos</h2>
+    </div>
+
+    <section>
+        
+        <div class="container">
+            
+            <div class="user singinbx">
+                <div class="formbox">
+
+                    <form action="{{url_for('cita')}}" enctype="multipart/form-data" method="POST">
+                        <h2>Agendar</h2>
+                        <input type="text" name="username" placeholder="Nombre" value="{{ username }}">
+                        <input type="email" name="email" placeholder="Correo" value="{{ email }}">
+                        <input type="text" name="celular" placeholder="celular" value="{{ celular }}">
+                        <input type="submit" name="" value="Agendar">
+                    </form>
+                </div>
+                <div class="imgbox"><img src="/static/FaniaReserva.jpeg"></div>
+            </div>     
+        </div>
+    </section>
+    {% endblock %}
+
+</body>
+</html>
