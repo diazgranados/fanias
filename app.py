@@ -44,10 +44,6 @@ def reserva():
 def login():
 
     return render_template("loginadm.html")
-@app.get("/admin")
-def admin():
-
-    return render_template("adm.html")
 
 
 @app.route("/login", methods=['GET','POST'])
@@ -63,7 +59,7 @@ def loginadm():
             
             session['id'] = user['id']
             
-            return redirect(url_for('admin'))
+            return redirect(url_for('datos'))
         else:
             flash("Algo salió mal, revisa tus credenciales")
         return render_template("loginadm.html")
@@ -79,7 +75,7 @@ def confirmaremail(token):
         return "<h1> timeout </h1>"
     return "<h1>"+ email + " Registro terminado, a hora puedes iniciar sesión <a href='"+url_for('reserva')+"'>Regresar</a> </h1> "
 
-@app.get("/admin1")
+@app.get("/admin")
 def datos(): 
     data = consultas.mostrar_datos()
      
@@ -137,12 +133,22 @@ def cita():
 
     return render_template("cita.html")
 
+@app.route("/eliminar/<int:id>")
+def eliminar(id):
+    datos=consultas.editar_datos(id=id)
+    flash("Dato eliminado exitosamente")
 
+    return redirect(url_for('datos',datos=datos))
+
+@app.route("/finalizar/<int:id>")
+def finalizar(id):
+    datos=consultas.finalizado(id=id)
+    return redirect(url_for('datos',datos=datos))
 
 @app.route('/layout', methods=["GET","POST"])
 def layout():
     session.clear()
-    return redirect(url_for('login'))
+    return redirect(url_for('login',datos=datos))
 
 if __name__ == '__main__':
     app.run(debug=True)

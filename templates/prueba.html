@@ -13,7 +13,7 @@
 </head>
 <body>
     <video autoplay muted loop id="bg-video">
-        <source src="/static/video/y2mate.com - Fondo Animado Neón GRATIS_1080pFHR.mp4" type="video/mp4">
+        <source src="/static/video/y2mate.com - Background flores animadas_1080p.mp4" type="video/mp4">
     </video>
     <div class="page-container">
       <div class="container-fluid">
@@ -28,15 +28,15 @@
                   <div class="collapse navbar-collapse" id="navbar-supported-content">
                     <ul class="navbar-nav mb-2 mb-lg-0">
                       <li class="nav-item selected">
-                        <a class="nav-link" aria-current="page" href="#0" data-no="1">Inicio</a>
+                        <a class="nav-link" aria-current="page" href="#0" data-no="1"> <b>Inicio</b> </a>
                         <div class="circle"></div>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#0" data-no="2">Galeria</a>
+                        <a class="nav-link" href="#0" data-no="2"> <b>Galeria</b> </a>
                         <div class="circle"></div>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#0" data-no="3">Conocenos</a>
+                        <a class="nav-link" href="#0" data-no="3"> <b>Conocenos</b> </a>
                         <div class="circle"></div>
                       </li>
 
@@ -70,7 +70,7 @@
                 <div class="circle intro-circle-4"></div>
               </div>
               <div class="text-center">
-                <a href="#0" data-page-no="2" class="btn btn-primary tm-intro-btn tm-page-link">
+                <a href="#0" data-page-no="2" class="btn btn-success tm-intro-btn tm-page-link">
                   Observa nuestro trabajo
 
                 </a>
@@ -142,8 +142,8 @@
                 </figure>
        
               </div>
-              <button class="btn btn-primary tm-intro-btn tm-page-link" class="boton"><a class="boton"  href="{{ url_for('reserva') }}">Explora</a></button>                    
-              <button class="btn btn-primary tm-intro-btn tm-page-link" class="boton"><a class="boton"  href="{{ url_for('login') }}">logeate</a></button>
+              <button class="btn btn-success tm-intro-btn tm-page-link" class="boton"><a class="boton"  href="{{ url_for('reserva') }}">Explora</a></button>                    
+              <button class="btn btn-success tm-intro-btn tm-page-link" class="boton"><a class="boton"  href="{{ url_for('login') }}">logeate</a></button>
    
             </div>
           </li>
@@ -170,7 +170,7 @@
     <div class="container-fluid">
       <footer class="row mx-auto tm-footer">
         <div class="col-md-6 px-0">
-          Fania's por siempre
+          <h5>Fania's por siempre</h5> 
         </div>
         <div class="col-md-6 px-0 tm-footer-right">
           Designed by <a rel="sponsored" href="https://templatemo.com" target="_blank" class="tm-link-white">TemplateMo</a>
@@ -188,5 +188,11 @@
   <script src="/static/js/js/bootstrap.min.js"></script>
   <script src="/static/js/js/slick.js"></script>
   <script src="/static/js/js/templatemo-script.js"></script>
+  <style>
+    h5{
+      color: black;
+      font-weight: bolder;
+    }
+  </style>
 </body>
 </html>

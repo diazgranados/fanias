@@ -61,4 +61,22 @@ def mostrar_datos():
     resultados = cursor.fetchall()
     cursor.close()
     return resultados
-  
+
+def editar_datos(id):
+    cursor = db.cursor(buffered=True)
+    cursor.execute(" DELETE  FROM agendar WHERE id = %s ",(
+        id,
+    ))
+
+    datos = cursor.fetchone()
+    cursor.close()  
+    return datos
+def finalizado(id):
+    cursor = db.cursor(buffered=True)
+    cursor.execute(" UPDATE agendar SET finalizado='si' WHERE id = %s ",(
+        id,
+    ))
+
+    datos = cursor.fetchone()
+    cursor.close()  
+    return datos  

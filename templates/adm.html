@@ -34,6 +34,7 @@ Citas reservadas
                 <li><a class="pedidos" href="#">Pedidos</a></li>
                 <li><a class="reservaciones" href="#">Reservaciones</a></li>
                 <li><a class="salir" href="{{ url_for('layout') }}">Cerrar Sesión</a></li>
+                <li><a class="salir" href="{{url_for('datos')}}">Refrescar pagina</a></li>
             </ul>
             
         </div>
@@ -50,6 +51,7 @@ Citas reservadas
             <th scope="col">Celular</th>
             <th scope="col">Estado</th>
             <th scope="col">Finalizado</th>
+            <th scope="col">Opciones</th>           
           </tr>
         </thead>
         <tbody>
@@ -61,7 +63,11 @@ Citas reservadas
                 <td>{{resultados['celular']}}</td>
                 <td>{{resultados['status']}}</td>
                 <td>{{resultados['finalizado']}}</td>
+                <td>
+                    <a class="eliminar" href="/eliminar/{{resultados['id']}}">eliminar</a>
+                    <a class="eliminar" href="/finalizar/{{resultados['id']}}">finalizado</a>                     
                 </td>
+
             </tr>
             {% endfor %}
         </tbody>
