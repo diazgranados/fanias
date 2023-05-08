@@ -38,11 +38,13 @@ Citas reservadas
             
         </div>
     </section>
+
     <h1>Citas pendientes</h1>
     
     <table class="table table-hover table-dark">
         <thead>
           <tr>
+            <th scope="col">Identificacion</th>
             <th scope="col">Nombre</th>
             <th scope="col">Email</th>
             <th scope="col">Celular</th>
@@ -51,23 +53,15 @@ Citas reservadas
           </tr>
         </thead>
         <tbody>
-            {%for productos in products %}
+            {%for resultados in data %}
             <tr>
-                <td>{{productos['id']}}</td>
-                <td>{{productos['nombre']}}</td>
-                <td>{{productos['descripción']}}</td>
-                <td>{{productos['precio']}}</td>
-                <td>{{productos['estado']}}</td>
-                <td>
+                <td>{{resultados['id']}}</td>
+                <td>{{resultados['nombre']}}</td>
+                <td>{{resultados['email']}}</td>
+                <td>{{resultados['celular']}}</td>
+                <td>{{resultados['status']}}</td>
+                <td>{{resultados['finalizado']}}</td>
                 </td>
-                
-    
-                <td>
-
-                
-                    <a class="eliminar" href="/eliminar/{{productos['id']}}">eliminar</a>
-                </td>
-
             </tr>
             {% endfor %}
         </tbody>

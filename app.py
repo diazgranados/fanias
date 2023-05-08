@@ -79,6 +79,12 @@ def confirmaremail(token):
         return "<h1> timeout </h1>"
     return "<h1>"+ email + " Registro terminado, a hora puedes iniciar sesión <a href='"+url_for('reserva')+"'>Regresar</a> </h1> "
 
+@app.get("/admin1")
+def datos(): 
+    data = consultas.mostrar_datos()
+     
+    return render_template("adm.html",data=data)
+
 @app.route('/cita', methods=['GET','POST'])
 def agendar():
     if request.method=='POST':
@@ -130,6 +136,7 @@ def agendar():
 def cita():
 
     return render_template("cita.html")
+
 
 
 @app.route('/layout', methods=["GET","POST"])

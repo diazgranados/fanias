@@ -55,3 +55,10 @@ def mostrar_productos_usuario():
     products = cursor.fetchall()
     cursor.close()
     return products
+def mostrar_datos():
+    cursor = db.cursor(buffered=True, dictionary=True)
+    cursor.execute("SELECT * FROM agendar")
+    resultados = cursor.fetchall()
+    cursor.close()
+    return resultados
+  
