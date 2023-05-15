@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cita</title>
     <link rel="stylesheet" href="/static/actualizar_datos.css">
-    <link rel="icon" type="image/png" href="/static/img/uña.png">
+    <link rel="icon" type="image/png" href="/static/img/logofanias.png">
 </head>
 {% block contenido%}
 <div class="otracosa">
@@ -20,14 +20,20 @@
 </div>
 <body>
 
-    <div class="color">
-        <h2 class="h1">Ingresa tus datos</h2>
-    </div>
+    <script>
+        function formatearFechaHora() {
+          var fechaHoraInput = document.getElementById("fecha_hora");
+          var fechaHora = fechaHoraInput.value.replace("T", " ");
+          fechaHoraInput.value = fecha_Hora;
+        }
+      </script>
 
     <section>
-        
+        <div class="color">
+            <h2 class="h1">Ingresa tus datos</h2>
+        </div>
         <div class="container">
-            
+
             <div class="user singinbx">
                 <div class="formbox">
 
@@ -36,6 +42,10 @@
                         <input type="text" name="username" placeholder="Nombre" value="{{ username }}">
                         <input type="email" name="email" placeholder="Correo" value="{{ email }}">
                         <input type="text" name="celular" placeholder="celular" value="{{ celular }}">
+                        <input type="date" id="fecha" name="fecha">
+
+                        <br>
+                        
                         <input type="submit" name="" value="Agendar">
                     </form>
                 </div>

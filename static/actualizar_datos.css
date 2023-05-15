@@ -6,7 +6,7 @@ body{
 background: #654ea3;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #eaafc8, #654ea3);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #eaafc8, #654ea3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+overflow: hidden;
 }
 section{
     position: relative;
@@ -27,9 +27,11 @@ section{
     background: linear-gradient(to right, #ff938f, #ffbfaf); 
     */
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
+    overflow: hidden;
 
 }
 
@@ -47,6 +49,7 @@ section .container .user{
     width: 100%;
     height: 100%;
     display: flex;
+    overflow: hidden;
 }
 
 section .container .user .imgbox{
@@ -54,6 +57,7 @@ section .container .user .imgbox{
     width: 50%;
     height: 100%;
     transition: 0.5s;
+    overflow: hidden;
 }
 
 section .container .user .imgbox img{
@@ -63,6 +67,7 @@ section .container .user .imgbox img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    overflow: hidden;
 }
 
 section .container .user .formbox{
@@ -80,6 +85,7 @@ section .container .user .formbox{
     align-items: center;
     padding: 40px;
     transform: 0.5s;
+    overflow: hidden;
 }
 form{
     position: relative;
@@ -97,6 +103,7 @@ section .container .user .formbox form h2{
     width: 100%;
     margin-bottom: 10px;
     color: white;
+    overflow: hidden;
 }
 
 section .container .user .formbox form input{
@@ -113,6 +120,7 @@ section .container .user .formbox form input{
     font-size: 14px;
     letter-spacing: 1px;
     font-weight: 300;
+    overflow: hidden;
 }
 
 section .container .user .formbox form input[type="submit"]{
@@ -124,6 +132,7 @@ section .container .user .formbox form input[type="submit"]{
     font-weight: 500;
     letter-spacing: 1px;
     transform: 0.5s;
+    overflow: hidden;
 }
 
 .h1{
