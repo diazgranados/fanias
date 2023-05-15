@@ -15,7 +15,13 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 import webbrowser
 
-
+db=mysql.connector.connect(
+    host="bgurebqvhsfwelck865p-mysql.services.clever-cloud.com",
+    user="usfpxmgtdbpew9wd",
+    password="pvxDpYiqnXH7hQcqdxFs",
+    port=3306,
+    database="bgurebqvhsfwelck865p",
+)
 app = Flask(__name__)
 
 
@@ -199,5 +205,5 @@ def layout():
 
 
 
-#if __name__ == '__main__':
-#    app.run(debug=True)
+if __name__ == '__main__':
+    app.run(debug=True)
