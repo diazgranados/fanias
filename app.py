@@ -172,7 +172,7 @@ def agendar():
             server.login(username, password)
             server.send_message(msg)
             server.quit()
-            flash("Te hemos enviado a tu email un correo de confirmación!")
+            flash("!Te hemos enviado a tu email un correo de confirmación!")
             return redirect(url_for('reserva'))
     else:
             return render_template("cita.html")
