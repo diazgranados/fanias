@@ -16,11 +16,11 @@ from email.mime.multipart import MIMEMultipart
 import webbrowser
 
 db=mysql.connector.connect(
-    host="bgurebqvhsfwelck865p-mysql.services.clever-cloud.com",
-    user="usfpxmgtdbpew9wd",
-    password="pvxDpYiqnXH7hQcqdxFs",
+    host="localhost",
+    user="root",
+    password="",
     port=3306,
-    database="bgurebqvhsfwelck865p",
+    database="fania",
 )
 app = Flask(__name__)
 

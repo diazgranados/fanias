@@ -47,6 +47,19 @@
 </body>
 </html>
 
+bd normal
+
+MYSQL_HOSTNAME="localhost"
+MYSQL_USERNAME="root"
+MYSQL_PASSWORD=""
+MYSQL_DATABASE="fania"
+MYSQL_PORT="3306"
+
+SMTP_EMAIL='cesardiazgranados2020@itp.edu.co'
+SMTP_PASSWORD="1124860574"
+
+
+
 
 
 
