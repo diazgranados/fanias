@@ -58,8 +58,12 @@ MYSQL_PORT="3306"
 SMTP_EMAIL='cesardiazgranados2020@itp.edu.co'
 SMTP_PASSWORD="1124860574"
 
-
-
+bd pagina
+MYSQL_HOSTNAME="bgurebqvhsfwelck865p-mysql.services.clever-cloud.com"
+MYSQL_USERNAME="usfpxmgtdbpew9wd"
+MYSQL_PASSWORD="pvxDpYiqnXH7hQcqdxFs"
+MYSQL_DATABASE="bgurebqvhsfwelck865p"
+MYSQL_PORT="3306"
 
 
 
