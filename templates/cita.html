@@ -10,6 +10,10 @@
 
 </head>
 <body>
+    <div class="video-background">
+        <video autoplay loop muted>
+            <source src="/static/video/y2mate.com - Background flores animadas_1080p.mp4" type="video/mp4">        </video>
+      </div>
     <div class="otracosa">
         {% with messages = get_flashed_messages() %}
         {% if messages %}
@@ -33,7 +37,7 @@
                         <input type="text" name="celular" placeholder="Celular" value="{{ celular }}">
                         <input type="date" id="fecha" name="fecha">
                         <br>
-                        <input type="submit" name="" value="Agendar">
+                        <input type="submit" name="" value="Agendar" placeholder="Fecha">
                     </form>
                 </div>
                 <div class="imgbox"><img src="/static/FaniaReserva.jpeg"></div>
