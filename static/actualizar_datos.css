@@ -837,3 +837,421 @@ section .container .user .formbox form input[type="submit"]{
             }
     
   }
+  @media (orientation: portrait) {
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&family=Roboto:wght@900&display=swap');
+
+    body{
+        margin:0;
+        padding:0;
+    
+    background: #654ea3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #eaafc8, #654ea3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #eaafc8, #654ea3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    overflow: hidden;
+    }
+    section{
+        position: relative;
+        min-height: 100vh;
+        position: relative;  
+        /*background: url(wallpaper.jpg);*/
+        background: #654ea3;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #eaafc8, #654ea3);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #eaafc8, #654ea3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /*background: #ff7c70;
+        background: -webkit-linear-gradient(to right, #ff938f, #ffbfaf);
+        background: linear-gradient(to right, #ff938f, #ffbfaf); 
+        */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        overflow: hidden;
+    
+    }
+    
+    section .container{
+        position: relative;
+        width: 800px;
+        height: 500px;
+        overflow: hidden;
+    }
+    
+    section .container .user{
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        overflow: hidden;
+    }
+    
+    section .container .user .imgbox{
+        position: relative;
+        width: 50%;
+        height: 100%;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+    
+    section .container .user .imgbox img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+    }
+    
+    section .container .user .formbox{
+        position: relative;
+        width: 50%;
+        height: 100%;
+        background: #141e3094;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #243b5585, #141e307e);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #243b5579, #141e3079); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+        display: flex;
+        justify-content: center;
+        font-family: 'poppins', sans-serif;
+        font-weight: 900;
+        align-items: center;
+        padding: 40px;
+        transform: 0.5s;
+        overflow: hidden;
+    }
+    form{
+        position: relative;
+        margin-top: -90px;
+    }
+    .formbox{
+        position: relative;
+    }
+    section .container .user .formbox form h2{
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 10px;
+        color: white;
+        overflow: hidden;
+    }
+    
+    section .container .user .formbox form input{
+        position: relative;
+        width: 100%;
+        padding: 10px;
+        padding: 10px;
+        background: #f5f5f5;
+        color: #333;
+        border: none;
+        outline: none;
+        box-shadow: none;
+        margin: 8px 0;
+        font-size: 14px;
+        letter-spacing: 1px;
+        font-weight: 300;
+        overflow: hidden;
+    }
+    
+    section .container .user .formbox form input[type="submit"]{
+        max-width: 100px;
+        background: white;
+        color: black;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        transform: 0.5s;
+        overflow: hidden;
+    }
+    
+    .h1{
+        position: relative;
+        color: black;
+        font-size: 40px;
+        font-weight: 900;
+        font-family: 'poppins', sans-serif;
+        text-align: center;
+    
+    }
+    .otracosa{
+        position: relative;
+        background: #141e3094;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #243b5585, #141e307e);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #243b5579, #141e3079); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+        color: #ffffff;
+        text-align: center;
+        font-size:30px ;
+    }
+    /* Estilos CSS aquí */
+    
+            /* Estilos generales */
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: Arial, sans-serif;
+            }
+    
+            /* Contenedor principal */
+            .container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+    
+            /* Formulario */
+            .formbox {
+                max-width: 400px;
+                padding: 20px;
+                background-color: #f1f1f1;
+            }
+    
+            /* Imagen */
+            .imgbox {
+                max-width: 400px;
+                padding: 20px;
+                background-color: #f1f1f1;
+            }
+    
+            /* Títulos */
+            h2 {
+                margin-top: 0;
+            }
+    
+            /* Inputs */
+            input[type="text"],
+            input[type="email"],
+            input[type="date"],
+            input[type="submit"] {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 10px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+    
+     
+  }
+  
+  @media only screen and (min-device-width: 960px){
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&family=Roboto:wght@900&display=swap');
+
+    body{
+        margin:0;
+        padding:0;
+    
+    background: #654ea3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #eaafc8, #654ea3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #eaafc8, #654ea3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    overflow: hidden;
+    }
+    section{
+        position: relative;
+        min-height: 100vh;
+        position: relative;  
+        /*background: url(wallpaper.jpg);*/
+        background: #654ea3;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #eaafc8, #654ea3);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #eaafc8, #654ea3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /*background: #ff7c70;
+        background: -webkit-linear-gradient(to right, #ff938f, #ffbfaf);
+        background: linear-gradient(to right, #ff938f, #ffbfaf); 
+        */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        overflow: hidden;
+    
+    }
+    
+    section .container{
+        position: relative;
+        width: 800px;
+        height: 500px;
+        overflow: hidden;
+    }
+    
+    section .container .user{
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        overflow: hidden;
+    }
+    
+    section .container .user .imgbox{
+        position: relative;
+        width: 50%;
+        height: 100%;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+    
+    section .container .user .imgbox img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+    }
+    
+    section .container .user .formbox{
+        position: relative;
+        width: 50%;
+        height: 100%;
+        background: #141e3094;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #243b5585, #141e307e);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #243b5579, #141e3079); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+        display: flex;
+        justify-content: center;
+        font-family: 'poppins', sans-serif;
+        font-weight: 900;
+        align-items: center;
+        padding: 40px;
+        transform: 0.5s;
+        overflow: hidden;
+    }
+    form{
+        position: relative;
+        margin-top: -90px;
+    }
+    .formbox{
+        position: relative;
+    }
+    section .container .user .formbox form h2{
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 10px;
+        color: white;
+        overflow: hidden;
+    }
+    
+    section .container .user .formbox form input{
+        position: relative;
+        width: 100%;
+        padding: 10px;
+        padding: 10px;
+        background: #f5f5f5;
+        color: #333;
+        border: none;
+        outline: none;
+        box-shadow: none;
+        margin: 8px 0;
+        font-size: 14px;
+        letter-spacing: 1px;
+        font-weight: 300;
+        overflow: hidden;
+    }
+    
+    section .container .user .formbox form input[type="submit"]{
+        max-width: 100px;
+        background: white;
+        color: black;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        transform: 0.5s;
+        overflow: hidden;
+    }
+    
+    .h1{
+        position: relative;
+        color: black;
+        font-size: 40px;
+        font-weight: 900;
+        font-family: 'poppins', sans-serif;
+        text-align: center;
+    
+    }
+    .otracosa{
+        position: relative;
+        background: #141e3094;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #243b5585, #141e307e);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #243b5579, #141e3079); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+        color: #ffffff;
+        text-align: center;
+        font-size:30px ;
+    }
+    /* Estilos CSS aquí */
+    
+            /* Estilos generales */
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: Arial, sans-serif;
+            }
+    
+            /* Contenedor principal */
+            .container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+    
+            /* Formulario */
+            .formbox {
+                max-width: 400px;
+                padding: 20px;
+                background-color: #f1f1f1;
+            }
+    
+            /* Imagen */
+            .imgbox {
+                max-width: 400px;
+                padding: 20px;
+                background-color: #f1f1f1;
+            }
+    
+            /* Títulos */
+            h2 {
+                margin-top: 0;
+            }
+    
+            /* Inputs */
+            input[type="text"],
+            input[type="email"],
+            input[type="date"],
+            input[type="submit"] {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 10px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+    
+  }
