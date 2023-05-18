@@ -7,45 +7,61 @@
     <title>Cita</title>
     <link rel="stylesheet" href="/static/actualizar_datos.css">
     <link rel="icon" type="image/png" href="/static/img/logofanias.png">
-</head>
-{% block contenido%}
-<div class="otracosa">
-    {% with messages = get_flashed_messages() %}
-    {% if messages %}
-    {% for message in messages %}
-        <p>{{message}}</p>
-    {% endfor %}
-    {% endif %}
-    {% endwith %}
-</div>
-<body>
-
-    <script>
-        function formatearFechaHora() {
-          var fechaHoraInput = document.getElementById("fecha_hora");
-          var fechaHora = fechaHoraInput.value.replace("T", " ");
-          fechaHoraInput.value = fecha_Hora;
+    <style>
+        /* Agrega estilos específicos para dispositivos móviles aquí */
+        /* Por ejemplo, puedes ajustar el tamaño de fuente, márgenes, etc. */
+        body {
+            font-size: 16px;
+            margin: 0;
+            padding: 0;
         }
-      </script>
-
+        
+        .container {
+            max-width: 100%;
+            padding: 10px;
+        }
+        
+        .user {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .imgbox {
+            margin-top: 10px;
+            text-align: center;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="otracosa">
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        {% for message in messages %}
+            <p>{{message}}</p>
+        {% endfor %}
+        {% endif %}
+        {% endwith %}
+    </div>
     <section>
         <div class="color">
             <h2 class="h1">Ingresa tus datos</h2>
         </div>
         <div class="container">
-
             <div class="user singinbx">
                 <div class="formbox">
-
                     <form action="{{url_for('agendar')}}" enctype="multipart/form-data" method="POST">
                         <h2>Agendar</h2>
                         <input type="text" name="username" placeholder="Nombre" value="{{ username }}">
                         <input type="email" name="email" placeholder="Correo" value="{{ email }}">
-                        <input type="text" name="celular" placeholder="celular" value="{{ celular }}">
+                        <input type="text" name="celular" placeholder="Celular" value="{{ celular }}">
                         <input type="date" id="fecha" name="fecha">
-
                         <br>
-                        
                         <input type="submit" name="" value="Agendar">
                     </form>
                 </div>
@@ -53,7 +69,5 @@
             </div>     
         </div>
     </section>
-    {% endblock %}
-
 </body>
 </html>
